@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cafeteria Delícias do Café</title>
+    <style>
+        /* Estilo geral do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('../Captura\ de\ tela\ 2025-09-10\ 080731.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Container do Formulário */
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Logo da Cafeteria */
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Título do formulário */
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Campos de entrada */
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        /* Botão de Login */
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Link para recuperação de senha */
+        .forgot-password {
+            color: #888;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            color: #333;
+        }
+
+        /* Opção "Lembrar de mim" */
+        .remember-me {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .remember-me input {
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Logo da Cafeteria -->
+        <div class="logo">
+            <img src="../Captura de tela 2025-09-10 080145.png" alt="Logo da Cafeteria">
+        </div>
+        
+        <!-- Título -->
+        <h2>Login</h2>
+
+        <!-- Campo de Email -->
+        <input type="email" class="input-field" placeholder="Email ID" required>
+
+        <!-- Campo de Senha -->
+        <input type="password" class="input-field" placeholder="Password" required>
+
+        <!-- Opção "Lembrar de mim" -->
+        <div class="remember-me">
+            <label>
+                <input type="checkbox"> Lembrar de mim
+            </label>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <!-- Botão de Login -->
+        <button id="Login" class="login-btn">LOGIN</button>
+    </div>
+    <script>
+
+        const botaologin = document.getElementById("Login");
+        botaologin.addEventListener("click",function(){
+            window.location.href = "./pagina-inicio.html"
+        
+        })
+    </script>
+
+</body>
+</html>
+
