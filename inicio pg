@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Usuário - Cafeteria Delícias do Café</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../Captura\ de\ tela\ 2025-09-10\ 081952.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Container centralizado */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Opções de navegação */
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Botão de Logout */
+        .logout-btn {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #e60000;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Bem-vindo à Cafeteria Delícias do Café</h1>
+            <p>Olá, <strong>[Nome do Usuário]</strong>! Estamos felizes em vê-lo novamente.</p>
+        </header>
+
+        <!-- Opções de navegação -->
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Nosso Menu</h3>
+                <p>Veja as deliciosas opções que temos para você.</p>
+                <a href="./menu.html">Ver Menu</a>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fazer Pedido</h3>
+                <p>Escolha o que você deseja e faça seu pedido!</p>
+                <a href="#">Fazer Pedido</a>
+            </div>
+
+            <div class="menu-item">
+                <h3>Minha Conta</h3>
+                <p>Veja e edite suas informações.</p>
+                <a href="#">Minha Conta</a>
+            </div>
+        </div>
+
+        <!-- Botão de Logout -->
+        <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+    </div>
+
+</body>
+</html>
+
